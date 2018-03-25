@@ -7,8 +7,8 @@ Begin VB.Form Form1
    BackColor       =   &H80000001&
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   9435
-   ClientLeft      =   3240
-   ClientTop       =   1830
+   ClientLeft      =   3435
+   ClientTop       =   885
    ClientWidth     =   14085
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
@@ -227,8 +227,8 @@ Begin VB.Form Form1
       ForeColor       =   -2147483640
       Orientation     =   0
       Enabled         =   -1
-      Connect         =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\USER\Videos\uts\db.mdb;Persist Security Info=False"
-      OLEDBString     =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\USER\Videos\uts\db.mdb;Persist Security Info=False"
+      Connect         =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db.mdb;Persist Security Info=False"
+      OLEDBString     =   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db.mdb;Persist Security Info=False"
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -518,7 +518,6 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 '===========================
 'Febrian Dwi Putra
-
 Private Sub abt_Click()
 Dialog.Show
 End Sub
@@ -668,6 +667,7 @@ mati (False)
 Call Form_Load
 End Sub
 Private Sub Form_Load()
+db
 Adodc1.Visible = False
 isi
 mati (False)
